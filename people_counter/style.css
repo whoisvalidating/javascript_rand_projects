@@ -1,0 +1,65 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+div {
+    max-width: 300px;
+    position: relative;
+    height: 500px;
+}
+
+div::before {
+    content: "";
+    background-image: url(background-people.jpg);
+    background-size: cover;
+    position: absolute;
+    opacity: .3;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+h1 {
+    position: relative;
+    margin-top: 20px;
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+
+h2{
+    position: relative;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+button {
+    position: relative;
+    border: solid black 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+#increment-btn {
+    background: rgb(53, 189, 26);
+}
+
+#save-btn {
+    background: rgb(33, 33, 146)
+}
+
+#decrement-btn {
+    background: rgb(180, 16, 16);
+}
+
+p {
+    position: relative;
+}
