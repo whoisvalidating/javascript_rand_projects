@@ -9,20 +9,23 @@ body {
     justify-content: space-evenly;
     background-image: url(./assets/background1.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
 }
 
 h2 {
-    font-size: 15vh;
+    font-size: 22vh;
     font-weight: bold;
+    margin-bottom: 1vh;
+    width: 60%;
+    text-align: center;
+    
 }
 
-h1{
-    font-size: 8vh;
-}
 .center h1{
-    font-size: 20vh;
+    font-size: 16vh;
     font-weight: bold;
-    margin-left: -3vh;
+    margin-left: -2vh;
 }
 .center {
     display: flex;
@@ -31,23 +34,22 @@ h1{
     justify-content: center;
 }
 .player h1 {
-    padding: 0 5vh;
+    padding: 0 3vh;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    font-size: 7vh;
 }
 .player h1, .player h2 {
     background-color: rgba(204, 214, 181, .4);
     border-style: inset;
-    display: flex;
-
-}
-.player h2 {
-    padding: 30% 30%;
-    
+    border-color: black;
 }
 .player div button {
-    height: 7vh;
-    width: 100%;
     border-radius: 100px;
     background-color: rgba(0, 0, 0, .45);
+    font-size: 6.3vh;
+    width: 100%;
+    color: burlywood;
 }
 .positive:hover {
     background-color: rgba(15, 255, 15, 0.25);
@@ -61,11 +63,26 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-items: center;
-}
-.life-buttons button{
-    font-size: 5vh;
-    color: bisque;
-}
-.life-buttons {
     width: 100%;
 }
+
+.life-buttons {
+    width: 50%;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .center h1 {
+      font-size: 4vh;
+      margin-left: -.5vh;
+    }
+    .center button {
+        height: 15vh;
+    }
+    .player h1 {
+        font-size: 3vh;
+    }
+    .player h2 {
+        font-size: 10vh;
+    }
+  }
