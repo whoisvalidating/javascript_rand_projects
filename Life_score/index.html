@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Balance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="player">
+        <h1>Total Life</h1>
+        <h2 id="playerLife1-el">20</h2>
+        <div class="life-buttons">
+            <button class="positive" onclick="player1Add5()">+ 5</button>
+            <button class="positive" onclick="player1Add2()">+ 2</button>
+            <button class="positive" onclick="player1Add()">+ 1</button>
+        </div>
+        <div class="life-buttons">
+            <button class="negative" onclick="player1Sub5()">- 5</button>
+            <button class="negative" onclick="player1Sub2()">- 2</button>
+            <button class="negative" onclick="player1Sub()">- 1</button>
+        </div>
+    </div>
+    <div class="center">
+        <h1>Vs</h1>
+        <button onclick="resetAll()">Reset</button>
+    </div>
+    <div class="player">
+        <h1>Total Life</h1>
+        <h2 id="playerLife2-el">20</h2>
+        <div class="life-buttons">
+            <button class="positive" onclick="player2Add5()">+ 5</button>
+            <button class="positive" onclick="player2Add2()">+ 2</button>
+            <button class="positive" onclick="player2Add()">+ 1</button>
+        </div>
+        <div class="life-buttons">
+            <button class="negative" onclick="player2Sub5()">- 5</button>
+            <button class="negative" onclick="player2Sub2()">- 2</button>
+            <button class="negative" onclick="player2Sub()">- 1</button>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

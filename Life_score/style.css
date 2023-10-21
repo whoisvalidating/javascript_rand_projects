@@ -1,0 +1,71 @@
+* {
+    font-family: 'Caveat', cursive;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(./assets/background1.jpg);
+    background-size: cover;
+}
+
+h2 {
+    font-size: 15vh;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 8vh;
+}
+.center h1{
+    font-size: 20vh;
+    font-weight: bold;
+    margin-left: -3vh;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.player h1 {
+    padding: 0 5vh;
+}
+.player h1, .player h2 {
+    background-color: rgba(204, 214, 181, .4);
+    border-style: inset;
+    display: flex;
+
+}
+.player h2 {
+    padding: 30% 30%;
+    
+}
+.player div button {
+    height: 7vh;
+    width: 100%;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, .45);
+}
+.positive:hover {
+    background-color: rgba(15, 255, 15, 0.25);
+}
+.negative:hover {
+    background-color: rgba(255, 0, 0, 0.25);
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+.life-buttons button{
+    font-size: 5vh;
+    color: bisque;
+}
+.life-buttons {
+    width: 100%;
+}
