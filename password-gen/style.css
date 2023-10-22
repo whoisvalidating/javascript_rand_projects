@@ -3,9 +3,7 @@
     font-size: 40px;
 }
 body {
-    background-image: url(./assets/background.jpg);
-    background-size: cover;
-    background-position: center;
+    background-color: rgb(48, 10, 36);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,6 +17,12 @@ p {
     border: solid;
     background-color: black;
     color: greenyellow;
-    width: 25%;
+    width: 60%;
     font-size: 5vw;
+    text-align: center;
+}
+
+button {
+    width: 50%;
+    margin-bottom: 1vh;
 }
