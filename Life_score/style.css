@@ -71,7 +71,7 @@ h2 {
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .center h1 {
       font-size: 4vh;
       margin-left: -.5vh;
@@ -83,6 +83,7 @@ h2 {
         font-size: 3vh;
     }
     .player h2 {
-        font-size: 10vh;
+        font-size: 8vh;
+        width: 40%;
     }
   }
