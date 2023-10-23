@@ -33,8 +33,10 @@ function player1Sub() {
 
 function resetAll() {
     start = 20;
+    playerLife1 = start;
+    playerLife2 = start;
     playerLife1El.textContent = start;
-    playerLife2El.textContent = start
+    playerLife2El.textContent = start;
 };
 
 function player2Add5() {
