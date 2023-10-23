@@ -1,14 +1,21 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Merienda', cursive;
 }
 
 body {
     display: flex;
     flex-direction: column;
+    background-image: url(./assets/background1.jpg);
 }
 .header {
     text-align: center;
+    padding: 2vh 0;
+    margin: 3vh;
+    background-color: rgba(202, 184, 143, 0.705);
+    border: .5vh solid rgba(75, 20, 4, .8);
+    box-shadow: 4vh 4vh 4vh 1vh rgba(22, 5, 0, 0.7);
 }
 .dice-block {
     display: flex;
@@ -28,7 +35,20 @@ body {
     width: 50%;
     align-items: center;
     height: 30vh;
+    background-color: rgba(202, 184, 143, 0.705);
+    border: .5vh solid rgba(0, 0, 0, .8);
+    box-shadow: 4vh 4vh 4vh 1vh rgba(22, 5, 0, 0.7);
+    margin-bottom: 1vh;
 }
 img {
     width: 20%;
+}
+button {
+    background-color: rgba(67, 80, 109, 0.87);
+    color: beige;
+    width: 50%;
+}
+.roll {
+    font-size: 2.5vh;
+    font-weight: bold;
 }

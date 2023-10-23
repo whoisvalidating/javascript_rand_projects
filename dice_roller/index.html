@@ -5,64 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dice roller</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header">
     <h1>Lets roll some dice</h1>
     <h3>and maybe some crits</h3>
-    <button>Reset All</button>
+    <button onclick="resetAll()">Reset All</button>
     </div>
     <div class="dice-block">
         <div class="left">
             <div class="dice">
                 <h1>D-20</h1>
                 <img src="./assets/d20.png">
-                <button>Roll</button>
-                <p>holder text for dice rolls</p>
-                <p>old rolls here</p>
-                <button>Reset</button>
+                <button onclick="d20Roll()">Roll</button>
+                <p class="roll" id="d20roll-el">holder text for dice rolls</p>
+                <p id="d20rolls-el">old rolls here</p>
+                <button onclick="reset20()">Reset</button>
             </div>
             <div class="dice">
                 <h1>D-10</h1>
                 <img src="./assets/d10.png">
-                <button>Roll</button>
-                <p>holder text for dice rolls</p>
-                <p>old rolls here</p>
-                <button>Reset</button>
+                <button onclick="d10Roll()">Roll</button>
+                <p class="roll" id="d10roll-el">holder text for dice rolls</p>
+                <p id="d10rolls-el">old rolls here</p>
+                <button onclick="reset10()">Reset</button>
             </div>
             <div class="dice">
                 <h1>D-6</h1>
                 <img src="./assets/d6.png">
-                <button>Roll</button>
-                <p>holder text for dice rolls</p>
-                <p>old rolls here</p>
-                <button>Reset</button>
+                <button onclick="d6Roll()">Roll</button>
+                <p class="roll" id="d6roll-el">holder text for dice rolls</p>
+                <p id="d6rolls-el">old rolls here</p>
+                <button onclick="reset6()">Reset</button>
             </div>
         </div>
         <div class="right">
             <div class="dice">
                 <h1>D-12</h1>
                 <img src="./assets/d12.png">
-                <button>Roll</button>
-                <p>holder text for dice rolls</p>
-                <p>old rolls here</p>
-                <button>Reset</button>
+                <button onclick="d12Roll()">Roll</button>
+                <p class="roll" id="d12roll-el">holder text for dice rolls</p>
+                <p id="d12rolls-el">old rolls here</p>
+                <button onclick="reset12()">Reset</button>
             </div>
             <div class="dice">
                 <h1>D-8</h1>
                 <img src="./assets/d8.png">
-                <button>Roll</button>
-                <p>holder text for dice rolls</p>
-                <p>old rolls here</p>
-                <button>Reset</button>
+                <button onclick="d8Roll()">Roll</button>
+                <p class="roll" id="d8roll-el">holder text for dice rolls</p>
+                <p id="d8rolls-el">old rolls here</p>
+                <button onclick="reset8()">Reset</button>
             </div>
             <div class="dice">
                 <h1>D-4</h1>
                 <img src="./assets/d4.png">
-                <button>Roll</button>
-                <p>holder text for dice rolls</p>
-                <p>old rolls here</p>
-                <button>Reset</button>
+                <button onclick="d4Roll()">Roll</button>
+                <p class="roll" id="d4roll-el">holder text for dice rolls</p>
+                <p id="d4rolls-el">old rolls here</p>
+                <button onclick="reset4()">Reset</button>
             </div>
         </div>
     </div>
